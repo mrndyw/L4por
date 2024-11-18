@@ -1,4 +1,3 @@
-<!-- Navbar.vue -->
 <template>
     <nav class="bg-[#558CDE] h-12 flex items-center justify-end px-4 w-full">
       <a href="#" class="flex items-center px-4 py-2 text-white">

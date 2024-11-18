@@ -1,21 +1,15 @@
 <template>
     <div class="flex h-screen">
-      <!-- Sidebar -->
       <Sidebar/>
     
-      <!-- Main Content Area -->
       <div class="flex-1 flex flex-col">
-        <!-- Navbar -->
         <Navbar />
     
-        <!-- Dashboard Content -->
         <div class="flex-1 p-8 bg-gray-100">
-          <!-- Dashboard Header -->
           <div class="flex justify-between items-center mb-8">
             <h1 class="text-2xl font-semibold">Laporan Masuk</h1>
           </div>
   
-          <!-- Stats Section (below the heading) -->
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
             <div class="bg-white p-6 rounded-lg shadow-md text-center">
               <h3 class="text-xl font-semibold">150</h3>
@@ -35,7 +29,6 @@
             </div>
           </div>
   
-          <!-- Dashboard Table -->
           <div class="bg-white p-6 rounded-lg shadow-md">
             <table class="min-w-full border-collapse">
               <thead class="bg-gray-50">
