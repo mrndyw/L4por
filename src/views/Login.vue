@@ -2,7 +2,6 @@
   <div
     class="flex flex-col h-screen items-center justify-center bg-gradient-to-r from-[#335061] to-[#4480A2]"
   >
-    <!-- Logo SMK -->
     <div class="flex justify-center mb-4">
       <img
         src="../assets/smkn4-bandung-logo.png"
@@ -10,13 +9,11 @@
         class="w-1/3 sm:w-20"
       />
     </div>
-    <!-- Teks SMKN 4 Bandung -->
     <div class="flex justify-center mb-8">
       <p class="text-white text-3xl sm:text-4xl font-light font-montserrat">
         SMKN 4 BANDUNG
       </p>
     </div>
-    <!-- Form Login -->
     <div
       class="bg-white rounded-lg shadow-md p-8 w-full max-w-md sm:p-6 sm:mb-6"
     >
@@ -24,7 +21,6 @@
         <h1 class="text-2xl sm:text-xl font-bold">Login to your account</h1>
       </div>
       <form @submit.prevent="handleLogin">
-        <!-- Username Input -->
         <div class="mb-4 relative">
           <label
             for="username"
@@ -38,13 +34,11 @@
             class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 pl-12"
             placeholder="Username"
           />
-          <!-- Ikon Username -->
           <i
             class="fas fa-user absolute left-4 top-2/3 transform -translate-y-1/2 text-gray-500"
           ></i>
         </div>
 
-      <!-- Password Input -->
 <div class="mb-2 relative">
   <label
     for="password"
@@ -58,11 +52,9 @@
     class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 pl-12"
     placeholder="Password"
   />
-  <!-- Ikon Password -->
   <i
     class="fas fa-lock absolute left-4 top-2/3 transform -translate-y-1/2 text-gray-500"
   ></i>
-  <!-- Ikon Mata (Show/Hide Password) -->
   <i
     @click="togglePassword"
     :class="showPassword ? 'fas fa-eye' : 'fas fa-eye-slash'"
@@ -70,7 +62,6 @@
   ></i>
 </div>
 
-<!-- Forgot your password link -->
 <div class="mt-1 text-right">
   <a
     href="#"
@@ -80,7 +71,6 @@
   </a>
 </div>
 
-<!-- Spacer before the login button -->
 <div class="mb-6"></div>
 
 
@@ -104,15 +94,14 @@ export default {
     return {
       username: "",
       password: "",
-      showPassword: false, // state untuk menentukan apakah password ditampilkan atau tidak
+      showPassword: false,
     };
   },
   methods: {
     togglePassword() {
-      this.showPassword = !this.showPassword; // toggle antara true dan false untuk menampilkan/sembunyikan password
+      this.showPassword = !this.showPassword;
     },
     handleLogin() {
-      // Logika untuk login
     },
   },
 };
