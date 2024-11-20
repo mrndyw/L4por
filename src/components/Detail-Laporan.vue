@@ -1,13 +1,9 @@
-<!-- ReportDetailPopup.vue -->
 <template>
   <div v-if="isOpen" class="fixed inset-0 z-50 overflow-y-auto">
-    <!-- Overlay -->
     <div class="fixed inset-0 bg-black bg-opacity-50" @click="closePopup"></div>
     
-    <!-- Popup Content -->
     <div class="relative min-h-screen flex items-center justify-center p-4">
       <div class="relative bg-white rounded-lg shadow-xl max-w-2xl w-full mx-auto">
-        <!-- Popup Body -->
         <div class="p-6">
           <h2 class="text-3xl text-left font-bold mb-6">Detail Laporan</h2>
           
@@ -40,7 +36,6 @@
           <!-- Description -->
           <p class="text-gray-700 text-left mb-6">{{ report.description }}</p>
 
-          <!-- Image -->
           <div class="mb-6">
             <img 
               :src="report.imageUrl" 
@@ -50,7 +45,6 @@
             />
           </div>
 
-          <!-- Status Dropdown with custom <span> options -->
           <div class="mb-6">
             <h4 class="font-semibold text-left mb-2">Status</h4>
             <div class="relative">
@@ -86,7 +80,6 @@
             </div>
           </div>
 
-          <!-- Save Button -->
           <div class="flex justify-end">
             <button
               @click="saveReport"

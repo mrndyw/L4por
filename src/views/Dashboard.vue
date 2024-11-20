@@ -5,12 +5,12 @@
     <div class="flex-1 flex flex-col">
       <Navbar />
 
-      <div class="flex-1 p-8 bg-gray-100">
-        <div class="flex justify-between items-center mb-8">
+      <div class="flex-1 px-6 pt-6 bg-gray-100">
+        <div class="flex justify-between items-center mb-4">
           <h1 class="text-2xl font-semibold">Laporan Masuk</h1>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-4">
           <div class="bg-white p-6 rounded-lg shadow-md">
             <p class="text-gray-500 text-left">Total Laporan</p>
             <h3 class="text-3xl text-left font-semibold">150</h3>

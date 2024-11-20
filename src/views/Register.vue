@@ -1,30 +1,30 @@
 <template>
     <div
-      class="flex flex-col h-screen items-center justify-center bg-gradient-to-r from-[#335061] to-[#4480A2]"
+      class="flex flex-col min-h-screen p-4 items-center justify-center bg-gradient-to-r from-[#335061] to-[#4480A2]"
     >
-      <div class="flex justify-center mb-4">
+      <div class="flex justify-center mb-2">
         <img
           src="../assets/smkn4-bandung-logo.png"
           alt="SMKN 4 Bandung"
           class="w-1/3 sm:w-20"
         />
       </div>
-      <div class="flex justify-center mb-8">
+      <div class="flex justify-center mb-4">
         <p class="text-white text-3xl sm:text-4xl font-light font-montserrat">
-          SMKN 4 BANDUNG
+          L4por
         </p>
       </div>
       <div
-        class="bg-white rounded-lg shadow-md p-8 w-full max-w-md sm:p-6 sm:mb-6"
+        class="bg-white rounded-lg shadow-md p-4 w-[22rem] max-w-md sm:p-6 sm:mb-6"
       >
-        <div class="text-center mb-6">
-          <h1 class="text-2xl sm:text-xl font-bold">Create your account</h1>
+        <div class="text-center mb-4">
+          <h1 class="text-2xl sm:text-xl font-bold">Register</h1>
         </div>
         <form @submit.prevent="handleRegister">
-          <div class="mb-4 relative">
+          <div class="mb-2 relative">
             <label
               for="username"
-              class="block text-gray-700 font-semibold mb-2 text-left text-sm sm:text-base"
+              class="block text-gray-700 font-md mb-1 text-left text-sm sm:text-base"
               >Username</label
             >
             <input
@@ -39,10 +39,10 @@
             ></i>
           </div>
   
-          <div class="mb-4 relative">
+          <div class="mb-2 relative">
             <label
               for="email"
-              class="block text-gray-700 font-semibold mb-2 text-left text-sm sm:text-base"
+              class="block text-gray-700 font-md mb-1 text-left text-sm sm:text-base"
               >Email</label
             >
             <input
@@ -57,10 +57,10 @@
             ></i>
           </div>
   
-          <div class="mb-6 relative">
+          <div class="mb-4 relative">
             <label
               for="password"
-              class="block text-gray-700 font-semibold mb-2 text-left text-sm sm:text-base"
+              class="block text-gray-700 font-md mb-1 text-left text-sm sm:text-base"
               >Password</label
             >
             <input
@@ -95,9 +95,9 @@
             Already have an account? 
             <router-link
               to="/login"
-              class="text-blue-500 hover:text-blue-700 font-medium"
+              class="text-blue-500 hover:text-blue-700 font-md"
             >
-              Masuk
+              Login
             </router-link>
           </p>
         </div>
@@ -121,8 +121,6 @@
         this.showPassword = !this.showPassword;
       },
       handleRegister() {
-        // Add your logic to handle registration here.
-        // You can send data to the backend via an API call.
         console.log({
           username: this.username,
           email: this.email,
@@ -131,9 +129,4 @@
       },
     },
   };
-  </script>
-  
-  <style>
-  /* Optional: Add additional custom styles here */
-  </style>
-  
+  </script>  
